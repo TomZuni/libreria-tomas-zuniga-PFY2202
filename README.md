@@ -134,11 +134,6 @@ npm run build      # genera la carpeta dist para producción
 npm run preview    # prueba la versión de producción
 ```
 
-## Publicar
-
-1. Sube el código a la rama `main` del repositorio `libreria-tomas-zuniga-PFY2202`.
-2. Para ver el sitio publicado: `npm run deploy` (sube `dist` a la rama `gh-pages`) y en **Settings → Pages** elige `gh-pages` / `/ (root)`.
-3. Comparte la URL del repositorio con el docente.
 
 ## Tecnologías
 
