@@ -3,7 +3,7 @@
 - **Curso:** Desarrollo Frontend II (PFY2202) · Duoc UC
 - **Actividad:** Semana 4 – "Utilizando tecnologías de integración entre frontend y backend"
 - **Alumno:** Tomás Zúñiga
-- **Repositorio:** `hospital-tomas-zuniga-PFY2202`
+- **Repositorio:** `libreria-tomas-zuniga-PFY2202`
 
 Aplicación web de una tienda de libros hecha con **React**, **React Router** y **Tailwind CSS**. Los usuarios exploran categorías de libros (Ficción, Ciencia Ficción, Fantasía...) y ven los libros de cada una. Los datos **no están escritos en los componentes**: se piden por `fetch` a una **API REST mock**.
 
@@ -136,7 +136,7 @@ npm run preview    # prueba la versión de producción
 
 ## Publicar
 
-1. Sube el código a la rama `main` del repositorio `hospital-tomas-zuniga-PFY2202`.
+1. Sube el código a la rama `main` del repositorio `libreria-tomas-zuniga-PFY2202`.
 2. Para ver el sitio publicado: `npm run deploy` (sube `dist` a la rama `gh-pages`) y en **Settings → Pages** elige `gh-pages` / `/ (root)`.
 3. Comparte la URL del repositorio con el docente.
 
