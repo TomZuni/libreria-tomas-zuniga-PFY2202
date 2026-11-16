@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+/* Colores de la marca */
+@theme {
+  --color-tinta-50: #f5f3ef;
+  --color-tinta-100: #ebe6dc;
+  --color-tinta-700: #3f3a54;
+  --color-tinta-800: #2d2940;
+  --color-tinta-900: #1f1c2e;
+  --color-acento-500: #d9822b;
+  --color-acento-600: #b9681a;
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background-color: var(--color-tinta-50);
+  color: var(--color-tinta-900);
+}
+
+/* Barra de carga global: una franja que se desliza mientras hay peticiones */
+@keyframes deslizar {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(350%); }
+}
+.barra-carga { animation: deslizar 1.1s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .barra-carga, .animate-spin, .animate-pulse { animation-duration: 3s; }
+}
