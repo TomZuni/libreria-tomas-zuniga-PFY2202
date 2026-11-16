@@ -77,6 +77,13 @@ async function pedir(ruta) {
   }
 }
 
+// Devuelve lo que hay en caché para una ruta (si sigue vigente) o undefined.
+// Permite a las páginas mostrar datos ya conocidos en el mismo instante, sin pasar por "cargando".
+export function leerCache(ruta) {
+  const guardado = cache.get(ruta)
+  return guardado && Date.now() - guardado.guardado < VIGENCIA_CACHE ? guardado.datos : undefined
+}
+
 // Pide un recurso (por ejemplo "/categorias").
 // - Si ya está en caché y vigente, responde al instante sin tocar la red.
 // - Si ya hay una petición idéntica en curso, comparte esa misma (no se repite).
