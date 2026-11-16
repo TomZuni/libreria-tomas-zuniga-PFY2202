@@ -108,3 +108,15 @@ export const rutas = {
   categorias: '/categorias',
   categoria: (id) => `/categorias/${encodeURIComponent(id)}`,
 }
+
+// Borra los datos guardados como respaldo (se usa en el panel de pruebas para
+// comprobar qué ocurre cuando el servidor falla y NO hay nada guardado).
+export function borrarRespaldos() {
+  try {
+    Object.keys(localStorage)
+      .filter((clave) => clave.startsWith(CLAVE_RESPALDO))
+      .forEach((clave) => localStorage.removeItem(clave))
+  } catch {
+    /* sin almacenamiento no hay nada que borrar */
+  }
+}
